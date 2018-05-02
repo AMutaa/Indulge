@@ -6,12 +6,21 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <title>Page Title</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
 </head>
 
 <body>
  <div class="container">
 
-  <div class="header"></div>
+  <div class="header">
+   <li>ABOUT US</li>
+   <li>MENU</li>
+   <li>EVENTS</li>
+   <li>ORDER ONLINE</li>
+   <li>CONTACT US</li>
+
+  </div>
   <div class="banner">
    <h1>Indulge</h1>
    <h3>Listen to your plate</h3>
@@ -34,6 +43,7 @@
 
   body {
    box-sizing: border-box;
+   font-family: "Handlee", cursive;
 
 
   }
@@ -48,13 +58,26 @@
 
   }
 
+  /* Header Styles */
 
-  /* Banner Styles */
+  .header {
+   display: flex;
+   place-items: center;
+   padding: 0 100px;
+   justify-content: space-around;
+  }
+
+  li {
+   list-style-type: none;
+  }
+
+  /* Banner Styles*/
 
   .banner {
    background-image: url(https://www.egorestaurants.co.uk/wp-content/uploads/2017/11/Large2_0003_Dorset-2267x928.jpg);
    background-size: cover;
    background-position: center;
+   place-items: center;
 
   }
 
