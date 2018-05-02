@@ -23,12 +23,21 @@
   </div>
   <div class="banner">
    <h1>Indulge</h1>
-   <h3>Listen to your plate</h3>
+   <h4>Listen to your plate</h4>
    <button>
 
    </button>
   </div>
-  <div class="item"></div>
+  <div class="item">
+   <div class="_1 box">
+    <h3>LUNCH</h3>></div>
+   <div class="_2 box">
+    <h3>DINNER</h3>
+   </div>
+   <div class="_3 box">
+    <h3>BAR</h3>
+   </div>
+  </div>
   <div class="footer"></div>
 
  </div>
@@ -37,24 +46,22 @@
  <style>
   /* Core Styles */
 
-  * {
-   border: 1px solid red;
-  }
-
   body {
    box-sizing: border-box;
    font-family: "Handlee", cursive;
-
+   background: linear-gradient( #070000, #4c0001, #070000);
 
   }
 
   .container {
    margin: 0 auto;
-   width: 100%;
-   height: 100vh;
+   /* max-width: 90%; */
+   /* height: 100vh; */
    display: grid;
-   grid-template-rows: 2fr 30fr 4fr 4fr;
+   grid-template-rows: 1fr 10fr 5fr 2fr;
+   grid-template-columns: 1fr;
    text-align: center;
+
 
   }
 
@@ -63,28 +70,60 @@
   .header {
    display: flex;
    place-items: center;
-   padding: 0 100px;
    justify-content: space-around;
   }
 
   li {
    list-style-type: none;
+   color: white;
   }
 
   /* Banner Styles*/
 
   .banner {
    background-image: url(https://www.egorestaurants.co.uk/wp-content/uploads/2017/11/Large2_0003_Dorset-2267x928.jpg);
-   background-size: cover;
-   background-position: center;
-   place-items: center;
-
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   object-fit: cover;
   }
 
   h1 {
    font-weight: 700;
    font-size: 5em;
+   color: white;
+  }
 
+  /* Item Styles */
+
+  .item {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+   padding: 30px 50px;
+   place-items: center;
+  }
+
+  .box {
+   height: 400px;
+   width: 400px;
+   object-fit: cover;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+
+  }
+
+  ._1 {
+   background-image: url(http://shine365.marshfieldclinic.org/wp-content/uploads/2016/03/Salad-In-A-Jar-I-MAC_0924.jpg);
+
+  }
+
+  ._2 {
+   background-image: url(https://search.chow.com/thumbnail/800/0/www.chowstatic.com/blog-media/2017/12/fancy-restaurant-chowhound-670x447.jpg);
+
+  }
+
+  ._3 {
+   background-image: url(https://www.manchesterbars.com/photos/manchester235-drinks450.jpg);
 
   }
  </style>
