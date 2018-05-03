@@ -11,36 +11,36 @@
 </head>
 
 <body>
- <div class="container">
 
+
+ <div class="banner">
   <div class="header">
    <li>ABOUT US</li>
    <li>MENU</li>
    <li>EVENTS</li>
    <li>ORDER ONLINE</li>
    <li>CONTACT US</li>
-
   </div>
-  <div class="banner">
+  <div class="text">
    <h1>Indulge</h1>
-   <h4>Listen to your plate</h4>
-   <button>
-
-   </button>
+   <h2>Listen to your plate</h2>
   </div>
-  <div class="item">
-   <div class="_1 box">
-    <h3>LUNCH</h3>></div>
-   <div class="_2 box">
-    <h3>DINNER</h3>
-   </div>
-   <div class="_3 box">
-    <h3>BAR</h3>
-   </div>
-  </div>
-  <div class="footer"></div>
-
  </div>
+
+
+ <div class="item">
+  <div class="_1 box">
+   <h3>LUNCH</h3>></div>
+  <div class="_2 box">
+   <h3>DINNER</h3>
+  </div>
+  <div class="_3 box">
+   <h3>BAR</h3>
+  </div>
+ </div>
+ <div class="footer"></div>
+
+
 
 
  <style>
@@ -51,26 +51,27 @@
    font-family: "Handlee", cursive;
    background: linear-gradient( #070000, #4c0001, #070000);
 
-  }
-
-  .container {
-   margin: 0 auto;
-   /* max-width: 90%; */
-   /* height: 100vh; */
-   display: grid;
-   grid-template-rows: 1fr 10fr 5fr 2fr;
-   grid-template-columns: 1fr;
-   text-align: center;
-
 
   }
 
-  /* Header Styles */
+  .banner {
+   height: 100vh;
+   background-image: url(https://ritzcarlton-h.assetsadobe.com/is/image/content/dam/the-ritz-carlton/hotels/usa-and-canada/florida/naples/need-captions/RCNAPLE_00384.png?$XlargeViewport100pct$);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
 
   .header {
+   margin: 0 auto;
+   width: 600px;
    display: flex;
-   place-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
+
   }
 
   li {
@@ -78,14 +79,9 @@
    color: white;
   }
 
-  /* Banner Styles*/
+  .text {}
 
-  .banner {
-   background-image: url(https://www.egorestaurants.co.uk/wp-content/uploads/2017/11/Large2_0003_Dorset-2267x928.jpg);
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   object-fit: cover;
-  }
+  /* Banner Styles*/
 
   h1 {
    font-weight: 700;
@@ -100,15 +96,14 @@
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 20px;
    padding: 30px 50px;
-   place-items: center;
+
   }
 
   .box {
-   height: 400px;
-   width: 400px;
-   object-fit: cover;
+   object-fit: contain;
    background-repeat: no-repeat;
    background-size: 100% 100%;
+
 
   }
 
@@ -124,6 +119,12 @@
 
   ._3 {
    background-image: url(https://www.manchesterbars.com/photos/manchester235-drinks450.jpg);
+
+  }
+
+  h3 {
+   color: white;
+
 
   }
  </style>
