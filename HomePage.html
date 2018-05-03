@@ -24,6 +24,7 @@
   <div class="text">
    <h1>Indulge</h1>
    <h2>Listen to your plate</h2>
+   <button class="btn">RESERVATION</button>
   </div>
  </div>
 
@@ -67,10 +68,11 @@
   }
 
   .header {
-   margin: 0 auto;
+   margin: 0;
    width: 600px;
    display: flex;
    justify-content: space-between;
+   align-items: flex-start;
 
   }
 
@@ -79,14 +81,20 @@
    color: white;
   }
 
-  .text {}
+  .text {
+   text-align: center;
+   color: whitesmoke;
+   font-weight: bold;
+  }
 
   /* Banner Styles*/
 
   h1 {
-   font-weight: 700;
-   font-size: 5em;
-   color: white;
+   font-size: 7em;
+  }
+
+  h2 {
+   font-size: 2em;
   }
 
   /* Item Styles */
@@ -94,17 +102,18 @@
   .item {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(300px, 1fr);
    grid-gap: 20px;
-   padding: 30px 50px;
+   padding: 20px 50px;
 
   }
 
   .box {
-   object-fit: contain;
    background-repeat: no-repeat;
-   background-size: 100% 100%;
-
-
+   background-position: center;
+   background-size: 100%;
+   object-fit: cover;
+   width: 100%;
   }
 
   ._1 {
