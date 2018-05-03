@@ -24,25 +24,11 @@
   <div class="text">
    <h1>Indulge</h1>
    <h2>Listen to your plate</h2>
-   <button class="btn">RESERVATION</button>
+   <button type="button" class="btn">RESERVATION</button>
   </div>
  </div>
 
-
- <div class="item">
-  <div class="_1 box">
-   <h3>LUNCH</h3>></div>
-  <div class="_2 box">
-   <h3>DINNER</h3>
-  </div>
-  <div class="_3 box">
-   <h3>BAR</h3>
-  </div>
- </div>
  <div class="footer"></div>
-
-
-
 
  <style>
   /* Core Styles */
@@ -65,20 +51,20 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
   }
 
   .header {
-   margin: 0;
-   width: 600px;
+   width: 60vw;
    display: flex;
    justify-content: space-between;
-   align-items: flex-start;
 
   }
 
   li {
    list-style-type: none;
    color: white;
+   font-size: 20px;
   }
 
   .text {
@@ -87,7 +73,7 @@
    font-weight: bold;
   }
 
-  /* Banner Styles*/
+
 
   h1 {
    font-size: 7em;
@@ -97,43 +83,21 @@
    font-size: 2em;
   }
 
-  /* Item Styles */
-
-  .item {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(300px, 1fr);
-   grid-gap: 20px;
-   padding: 20px 50px;
-
-  }
-
-  .box {
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: 100%;
-   object-fit: cover;
-   width: 100%;
-  }
-
-  ._1 {
-   background-image: url(http://shine365.marshfieldclinic.org/wp-content/uploads/2016/03/Salad-In-A-Jar-I-MAC_0924.jpg);
-
-  }
-
-  ._2 {
-   background-image: url(https://search.chow.com/thumbnail/800/0/www.chowstatic.com/blog-media/2017/12/fancy-restaurant-chowhound-670x447.jpg);
-
-  }
-
-  ._3 {
-   background-image: url(https://www.manchesterbars.com/photos/manchester235-drinks450.jpg);
-
-  }
-
   h3 {
    color: white;
 
+  }
+
+  .btn {
+   font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   letter-spacing: 30px;
+   color: whitesmoke;
+   background: transparent;
+   border: 2px solid beige;
+   border-radius: 42px;
+   cursor: pointer;
+   -webkit-transition-duration: 0.4s;
 
   }
  </style>
