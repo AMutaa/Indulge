@@ -1,9 +1,9 @@
 {
-  "name": "samples",
+  "name": "indulge",
   "version": "1.0.0",
-  "description": "Samples",
+  "description": "indulge",
   "main": "index.js",
-  "repository": "https://github.com/AMutaa/Samples.git",
+  "repository": "https://github.com/AMutaa/Indulge.git",
   "scripts": {
     "start": "run-script-os",
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
