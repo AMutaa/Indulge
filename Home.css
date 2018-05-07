@@ -1,0 +1,16 @@
+body {
+ box-sizing: border-box;
+}
+
+.container {
+ margin: 0 auto;
+ max-width: 98%;
+ height: 100vh;
+ display: grid;
+ grid-template-rows: 1fr 5fr 3fr 4fr 3fr;
+ grid-gap: 10px;
+}
+
+.container div {
+ border: 2px solid blue;
+}
