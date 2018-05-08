@@ -15,10 +15,6 @@ body {
 
 /* header styles */
 
-.banner {
-  background-color: azure;
-}
-
 .nav {
   display: flex;
   flex-wrap: nowrap;
@@ -56,6 +52,7 @@ h4 {
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 4s;
+  transition-duration: 4s;
 }
 
 .reservation:hover {
@@ -69,19 +66,16 @@ h4 {
 
 /* story styles */
 
-.story-img {
-  width: 400px;
-  height: 250px;
-  float: left;
-  border: 2px solid red;
-  margin: 20px 50px;
-  background: linear-gradient(#007991, #78ffd6);
+.Banner {
+  margin: 10px 200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 350px;
+  grid-gap: 10px
 }
 
-.story {
-  margin: 20px 50px;
-  float: right;
-  padding: 50px 0 50px 50px;
+.story_img {
+  background: linear-gradient(#007991, #78ffd6);
 }
 
 p {
