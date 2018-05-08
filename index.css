@@ -115,7 +115,9 @@ h3 {
   grid-gap: 10px;
   place-items: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #40464f;
+  font-weight: lighter;
+  color: azure;
+  background-color: #242628;
 }
 
 .credit {
@@ -158,4 +160,14 @@ i {
 li {
   font-size: 25px;
   line-height: 2em;
+  cursor: pointer;
 }
+
+.trans {
+  -webkit-transition-duration: 3s;
+  transition-duration: 3s;
+}
+
+.trans:hover {
+  font-size: 25px;
+  color: brown;
