@@ -13,7 +13,7 @@ body {
   grid-gap: 10px;
 }
 
-/* banner styles */
+/* header styles */
 
 .banner {
   background-color: azure;
@@ -36,6 +36,7 @@ li {
   margin: 0 auto;
   border: 2px solid red;
   text-align: center;
+  margin: 50px auto;
 }
 
 h1 {
@@ -49,13 +50,56 @@ h4 {
 .reservation {
   background-color: beige;
   border: 2px solid gray;
+  border-radius: 30px;
   color: black;
   text-align: center;
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
+  -webkit-transition-duration: 4s;
+}
+
+.reservation:hover {
+  background-color: brown;
+  color: white;
 }
 
 .item {
   border: 2px solid red;
+}
+
+/* story styles */
+
+.story-img {
+  width: 400px;
+  height: 250px;
+  float: left;
+  border: 2px solid red;
+  margin: 20px 50px;
+  background: linear-gradient(#007991, #78ffd6);
+}
+
+.story {
+  float: right;
+  padding: 50px 0 50px 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* menu styles */
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: 400px;
+  grid-gap: 50px;
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+.menu {
+  border: 2px solid red;
+  background: linear-gradient(#007991, #78ffd6);
 }
