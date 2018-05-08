@@ -67,7 +67,7 @@ h4 {
 /* story styles */
 
 .Banner {
-  margin: 10px 200px;
+  padding: 10px 200px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 350px;
@@ -78,7 +78,7 @@ h4 {
   background: linear-gradient(#007991, #78ffd6);
 }
 
-p {
+#story {
   font-size: 20px;
 }
 
@@ -98,14 +98,24 @@ p {
   background: linear-gradient(#007991, #78ffd6);
 }
 
+h3 {
+  text-align: center;
+  margin: 50% 0;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
 /* footer styles */
 
 .footer {
+  padding: 20px 30px;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 3fr;
   grid-template-rows: 200px 30px;
   grid-gap: 10px;
   place-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #40464f;
 }
 
 .credit {
@@ -113,12 +123,39 @@ p {
   grid-row: 2/-1;
 }
 
+#signup {
+  font-size: 20px;
+  line-height: 2em;
+}
+
 .newsletter {
   text-align: center;
+}
+
+i {
+  padding-right: 20px;
+}
+
+#textarea {
+  width: 250px;
+  height: 30px;
+  border: 2px solid gray;
+}
+
+#btn {
+  font-size: 15px;
+  width: 70px;
+  height: 30px;
+  border: 2px solid gray;
 }
 
 /* main styles */
 
 .none {
   list-style-type: none;
+}
+
+li {
+  font-size: 25px;
+  line-height: 2em;
 }
