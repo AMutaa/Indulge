@@ -21,7 +21,6 @@ body {
 
 .nav {
   display: flex;
-  list-style-type: none;
   flex-wrap: nowrap;
   justify-content: flex-end;
 }
@@ -80,6 +79,7 @@ h4 {
 }
 
 .story {
+  margin: 20px 50px;
   float: right;
   padding: 50px 0 50px 50px;
 }
@@ -102,4 +102,29 @@ p {
 .menu {
   border: 2px solid red;
   background: linear-gradient(#007991, #78ffd6);
+}
+
+/* footer styles */
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 3fr;
+  grid-template-rows: 200px 30px;
+  grid-gap: 10px;
+  place-items: center;
+}
+
+.credit {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+/* main styles */
+
+.none {
+  list-style-type: none;
 }
