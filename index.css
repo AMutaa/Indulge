@@ -277,11 +277,24 @@ li {
   /* story styles */
   .Banner {
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 350px 200px;
   }
   #story {
     font-size: 20px;
+  }
+  .story_img {
+    grid-column: 1/-1;
+  }
+  .text {
+    padding: 10px 0 10px 20px;
+    grid-column: 1/-1;
+  }
+  h4 {
+    margin: 0;
+  }
+  #story {
+    margin: 0;
   }
   /* menu styles */
   .menus {
@@ -323,5 +336,8 @@ li {
   .credit {
     grid-column: 1/-1;
     grid-row: 4/-1;
+  }
+  .inline {
+    display: block;
   }
 }
