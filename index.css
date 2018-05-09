@@ -8,10 +8,10 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: 4fr 2fr 3fr 2fr;
+  grid-template-rows: repeat(auto-fit, minmax(700px, 1fr));
   grid-gap: 50px;
 }
 
@@ -19,7 +19,6 @@ body {
 
 .nav1 {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: flex-end;
 }
 
@@ -148,6 +147,157 @@ a {
 }
 
 .newsletter {
+  text-align: center;
+}
+
+i {
+  padding-right: 20px;
+}
+
+#textarea {
+  width: 250px;
+  height: 30px;
+  border: 2px solid gray;
+}
+
+#btn {
+  font-size: 20px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+/* main styles */
+
+.none {
+  list-style-type: none;
+}
+
+li {
+  font-size: 25px;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+.trans {
+  -webkit-transition-duration: 3s;
+  transition-duration: 3s;
+}
+
+.trans:hover {
+  font-size: 25px;
+  color: brown;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile styles */
+
+@media screen and (max-width: 480px) {
+
+
+
+/* header styles */
+.maintext {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav1 {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h4 {
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+/* story styles */
+
+.Banner {
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+}
+
+#story {
+  font-size: 20px;
+}
+
+/* menu styles */
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-rows:repeat(3, 400px);
+  grid-gap: 20px;
+  justify-content: center;
+  background-color: beige;
+  place-content: center;
+
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.lunch {
+  background-image: url(http://shine365.marshfieldclinic.org/wp-content/uploads/2016/03/Salad-In-A-Jar-I-MAC_0924.jpg);
+
+}
+
+.dinner {
+  background-image: url(https://search.chow.com/thumbnail/800/0/www.chowstatic.com/blog-media/2017/12/fancy-restaurant-chowhound-670x447.jpg);
+}
+
+.bar {
+  background-image: url(https://www.manchesterbars.com/photos/manchester235-drinks450.jpg);
+}
+
+/* footer styles */
+
+.footer {
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, 400px);
+  grid-template-rows: 200px 200px 30px;
+  grid-gap: 10px;
+  place-content: center;
+  font-weight: lighter;
+  color: azure;
+  background-color: #242628;
+}
+
+a {
+  font-size: 25px;
+  line-height: 2em;
+  cursor: pointer;
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.credit {
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+}
+
+#signup {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+.newsletter {
+  grid-row: 2/3;
+
   text-align: center;
 }
 
