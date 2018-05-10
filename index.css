@@ -42,12 +42,13 @@ body {
 .nav:hover {
   color: rgb(180, 22, 22);
   font-size: 26px;
+  text-decoration: underline;
 }
 
 .maintext {
   width: 500px;
   text-align: center;
-  margin: 130px auto;
+  margin: 200px auto;
   line-height: 3em;
 }
 
@@ -77,7 +78,7 @@ h4 {
   text-align: center;
   letter-spacing: 15px;
   font-size: 25px;
-  margin: 100px;
+  margin: 150px 0 50px 0;
   cursor: pointer;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
@@ -101,36 +102,64 @@ h4 {
 }
 
 #story {
-  font-size: 25px;
+  font-size: 2em;
+  font-family: "Tangerine", cursive;
+  font-weight: lighter;
+}
+
+.story_img {
+  background-image: url(https://images.pexels.com/photos/209560/pexels-photo-209560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(180, 22, 22);
+  border-radius: 100%;
+  background-position-x: 60%;
 }
 
 /* menu styles */
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: 400px;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-rows: 500px;
   grid-gap: 40px;
   justify-content: center;
-  background-color: beige;
   place-content: center;
+  background-color: rgba(2, 0, 0, 0.9);
 }
 
 h3 {
+  color: white;
   text-align: center;
   font-size: 25px;
+  font-weight: lighter;
+  background: black;
+  opacity: 0.6;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+h3:hover {
+  color: rgb(180, 22, 22);
+  font-size: 26px;
 }
 
 .lunch {
-  background-image: url(http://shine365.marshfieldclinic.org/wp-content/uploads/2016/03/Salad-In-A-Jar-I-MAC_0924.jpg);
+  background-image: url(https://images.pexels.com/photos/64208/pexels-photo-64208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  background-position-x: 10%;
 }
 
 .dinner {
-  background-image: url(https://search.chow.com/thumbnail/800/0/www.chowstatic.com/blog-media/2017/12/fancy-restaurant-chowhound-670x447.jpg);
+  background-image: url(https://images.pexels.com/photos/370984/pexels-photo-370984.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  background-position-x: 10%;
 }
 
 .bar {
-  background-image: url(https://www.manchesterbars.com/photos/manchester235-drinks450.jpg);
+  background-image: url(https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  background-position-x: 10%;
 }
 
 /* footer styles */
