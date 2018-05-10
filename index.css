@@ -18,6 +18,14 @@ body {
 
 /* header styles */
 
+.header {
+  background-image: url(https://images.pexels.com/photos/299348/pexels-photo-299348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .nav1 {
   display: flex;
   justify-content: flex-end;
@@ -45,6 +53,9 @@ body {
 
 h1 {
   font-size: 5em;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 10px;
+  color: aqua;
 }
 
 h4 {
@@ -81,7 +92,6 @@ h4 {
 
 #story {
   font-size: 25px;
-  float: right;
 }
 
 /* menu styles */
