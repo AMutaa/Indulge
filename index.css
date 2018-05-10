@@ -130,6 +130,7 @@ h4 {
   justify-content: center;
   place-content: center;
   background-color: rgba(2, 0, 0, 0.9);
+  padding: 10px 0 10px 0;
 }
 
 h3 {
@@ -251,31 +252,40 @@ li {
 
 @media screen and (max-width: 1024px) {
   /* header styles */
+  .header {
+    width: 100%;
+    background-size: cover;
+  }
+
   .nav1 {
     justify-content: center;
   }
+
   /* story styles */
   .Banner {
-    padding: 5px 5px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: 350px;
-    grid-gap: 10px;
+    padding: 10px 10px;
   }
+
   .text {
     padding: 10px 0 10px 20px;
+    line-height: 40px;
   }
+
   h4 {
     margin: 0;
   }
+
   #story {
     margin: 0;
   }
+
   /* menu styles */
   .menus {
     grid-template-columns: repeat(auto-fit, 250px);
     grid-template-rows: 400px;
-    grid-gap: 5px;
+    grid-gap: 15px;
   }
+
   /* footer styles */
   .footer {
     grid-template-columns: 2fr 1fr;
@@ -325,14 +335,14 @@ li {
 
   .Banner {
     padding: 0 200px;
+    grid-template-columns: 1fr;
     grid-template-rows: 300px;
     grid-gap: 10px;
   }
 
   #story {
     margin-bottom: 0;
-    font-size: ;
-    font-family: "Tangerine", cursive;
+    font-size: 40px;
   }
 
   .text {
@@ -344,7 +354,7 @@ li {
   .menus {
     grid-template-columns: repeat(auto-fit, 600px);
     grid-template-rows: repeat(3, 600px);
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
 
   h3 {
