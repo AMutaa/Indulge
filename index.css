@@ -5,10 +5,9 @@
 }
 
 body {
-  /* margin: 0 auto; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-image: url(https://d1fjj4sn3e6x9n.cloudfront.net/~/media//viceroy_hotels_and_resorts/santamonica/Images/Large-1280x720/vsm-cast-background2-1280x720.ashx);
-  opacity: 1.5;
+  opacity: 1;
   z-index: -1;
 }
 .wrapper {
@@ -36,6 +35,8 @@ body {
 .nav1 {
   display: flex;
   justify-content: flex-end;
+  height: 50px;
+  font-weight: lighter;
 }
 
 .nav {
@@ -43,14 +44,14 @@ body {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.74);
   font-weight: lighter;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
 }
 
 .nav:hover {
   color: rgb(180, 22, 22);
   font-size: 26px;
   text-decoration: underline;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .maintext {
@@ -92,16 +93,9 @@ h4 {
   cursor: pointer;
   background-color: #00000000;
   width: 300px;
-
-  /* background: none; */
-  /* opacity: 0.7; */
 }
 
 .reservation:hover {
-  /* border-bottom: 4px solid rgba(54, 54, 250, 0.918); */
-  /* box-shadow: #eeae00; */
-  /* -webkit-transition-duration: 1s; */
-
   transition-duration: 2s;
   letter-spacing: 10px;
 }
@@ -151,25 +145,20 @@ h4 {
 
 .menu {
   display: grid;
+  font-size: 2em;
+  opacity: 0.9;
+  font-weight: lighter;
 }
 
 a {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   place-items: center;
 }
 
-h3 {
-  color: white;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: lighter;
-  opacity: 0.8;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
-
-h3:hover {
+a:hover {
   color: rgb(180, 22, 22);
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .lunch {
@@ -200,9 +189,9 @@ h3:hover {
   grid-gap: 10px;
   place-items: center;
   font-weight: lighter;
-  color: azure;
+  color: white;
   background-color: #242628;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 a {
