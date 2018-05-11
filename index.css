@@ -148,6 +148,8 @@ h4 {
   font-size: 2em;
   opacity: 0.9;
   font-weight: lighter;
+  background-size: cover;
+  background-position-x: 10%;
 }
 
 a {
@@ -163,20 +165,14 @@ a:hover {
 
 .lunch {
   background-image: url(https://images.pexels.com/photos/64208/pexels-photo-64208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
-  background-size: cover;
-  background-position-x: 10%;
 }
 
 .dinner {
   background-image: url(https://images.pexels.com/photos/370984/pexels-photo-370984.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
-  background-size: cover;
-  background-position-x: 10%;
 }
 
 .bar {
   background-image: url(https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
-  background-size: cover;
-  background-position-x: 10%;
 }
 
 /* footer styles */
