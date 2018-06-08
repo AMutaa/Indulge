@@ -218,12 +218,12 @@ i {
   color: brown;
 }
 
-#btn {
+button {
   font-size: 20px;
   width: 100px;
   height: 30px;
   border: 2px solid gray;
-  /* background-color: white; */
+  background-color: white;
 }
 
 /* main styles */
