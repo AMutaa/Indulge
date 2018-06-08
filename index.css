@@ -63,8 +63,7 @@ h1 {
   color: #9e2c39;
   letter-spacing: 10px;
   font-weight: normal;
-  text-shadow: 0 4px 7px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 7px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 h4 {
@@ -251,72 +250,6 @@ li {
 
 /* MEDIA QUERIES */
 
-/* Tablet Styles */
-
-@media screen and (max-width: 1024px) {
-  /* header styles */
-  .header {
-    width: 100%;
-    background-size: cover;
-  }
-  .nav1 {
-    justify-content: center;
-  }
-  /* story styles */
-  .Banner {
-    padding: 10px 10px;
-  }
-  .text {
-    padding: 10px 0 10px 20px;
-    line-height: 40px;
-  }
-  h4 {
-    margin: 0;
-  }
-  #story {
-    margin: 0;
-  }
-  /* menu styles */
-  .menus {
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-template-rows: 400px;
-    grid-gap: 15px;
-  }
-  /* footer styles */
-  .footer {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr 2fr 1fr;
-    height: 500px;
-    padding: 0 0;
-  }
-  .guide {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 15px;
-  }
-  .social {
-    grid-column: 1/-1;
-    grid-row: 2/3;
-  }
-  .help {
-    grid-column: 2/-1;
-    grid-row: 1/2;
-  }
-  .newsletter {
-    grid-column: 1/-1;
-    grid-row: 3/4;
-    text-align: center;
-  }
-  .credit {
-    grid-column: 1/-1;
-    grid-row: 4/-1;
-  }
-  .inline {
-    display: inline-block;
-    margin: 0 40px;
-  }
-}
-
 /* Mobile styles */
 
 @media screen and (max-width: 600px) {
@@ -379,4 +312,89 @@ li {
   .inline {
     display: block;
   }
+}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {}
+
+/* header styles */
+
+.header {
+  width: 100%;
+  background-size: cover;
+}
+
+.nav1 {
+  justify-content: center;
+}
+
+/* story styles */
+
+.Banner {
+  padding: 10px 10px;
+}
+
+.text {
+  padding: 10px 0 10px 20px;
+  line-height: 40px;
+}
+
+h4 {
+  margin: 0;
+}
+
+#story {
+  margin: 0;
+}
+
+/* menu styles */
+
+.menus {
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-rows: 400px;
+  grid-gap: 15px;
+}
+
+/* footer styles */
+
+.footer {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr 1fr;
+  height: 500px;
+  padding: 0 0;
+}
+
+.guide {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 15px;
+}
+
+.social {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.help {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.newsletter {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.credit {
+  grid-column: 1/-1;
+  grid-row: 4/-1;
+}
+
+.inline {
+  display: inline-block;
+  margin: 0 40px;
+}
+
 }
