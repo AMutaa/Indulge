@@ -1,2 +1,2 @@
 # Indulge
-A Restaurant Website
+A Restaurant Website Landing Page 
