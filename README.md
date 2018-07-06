@@ -1,2 +1,4 @@
 # Indulge
-A Restaurant Website Landing Page 
+ Listen to your plate
+ 
+ A mock restaurant website created using HTML and Advanced CSS
